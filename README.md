@@ -2,6 +2,8 @@
 
 Submission for AIviVN Vietnamese diacritics restoration contest https://www.aivivn.com/contests/3.
 
+A more detailed summary of the approach can be found [here (Vietnamese)](https://forum.machinelearningcoban.com/t/aivivn-3-vietnamese-tone-prediction-1st-place-solution/5721).
+
 ## Requirements
 
 Python > 3.6, PyTorch 1.0.1, torchtext, unidecode, dill, visdom, tqdm, kenlm.
