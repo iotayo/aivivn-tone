@@ -16,7 +16,7 @@ Python > 3.6, PyTorch 1.0.1, torchtext, unidecode, dill, visdom, tqdm, kenlm.
 
 [<p align="center"><img width="510" src="https://i.imgur.com/67CCUEU.png"></p>]()
 
-The embedding layer and encoder are standard. The model consists of 3 decoders:
+The embedding layer and encoder are standard. The model consists of 3 decoders (each decoder has its own softmax prediction layer):
 - a left-to-right decoder
 - a right-to-left decoder
 - a combined decoder constructed by concatenating output LSTM states of two previous decoders
@@ -55,3 +55,7 @@ Some of the code is taken from [IBM's PyTorch seq2seq implementation](https://gi
 The code to produce cleaned test data is [written by Khoi Nguyen](https://gist.github.com/suicao/5fd9e27bfb00a147998035730ca224d7?fbclid=IwAR13ufFJUTjTeyMO3KuN8dZTBACkC9ix-_XxN9Z6lshDdD8Eyn3KGPJri6o).
 
 The data used to train n-gram language model are taken from [this repo by @binhvq](https://github.com/binhvq/news-corpus).
+
+The Vietnamese dictionary used during beam search is taken from [this repo by @undertheseanlp](https://github.com/undertheseanlp/dictionary/blob/wiktionary/dictionary/words.txt).
+
+Finally, I'd like to thank the AIviVN admins for organizing the contest, providing the data, and preparing [a script to convert predicted text file to submission file](https://github.com/aivivn/vietnamese_tone_prediction_utils).
