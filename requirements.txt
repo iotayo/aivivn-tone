@@ -2,7 +2,7 @@ Unidecode==1.0.23
 torch==1.0.1.post2
 dill==0.2.9
 visdom==0.1.8.8
-numpy==1.16.2
+numpy==1.22.0
 tqdm==4.31.1
 torchtext==0.3.1
 
