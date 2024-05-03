@@ -3,6 +3,6 @@ torch==1.0.1.post2
 dill==0.2.9
 visdom==0.1.8.8
 numpy==1.16.2
-tqdm==4.31.1
+tqdm==4.66.3
 torchtext==0.3.1
 
